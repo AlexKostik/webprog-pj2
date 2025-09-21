@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="script.js">
+    <title>My notes</title>
 </head>
 <body>
     <div class="wrapper">
+        <!-- Левая колонка меню -->
         <div class="menu">
-            <div class="left">
-                <h1>Мои заметки</h1>
-            </div>
-            <div class="right">
-
+                <h1>Мои Заметки</h1>
+                <!-- Кнопка новой заметки -->
+                <button id="newNoteBtn">Новая Заметка</button>
+            <!-- Теги -->
+            <h2>Теги</h2>
+            <ul id="tags">
+                <li data-tag="Все" class="active">Все</li>
+                <li data-tag="Идеи">Идеи</li>
+                <li data-tag="Личное">Личное</li>
+                <li data-tag="Работа">Работа</li>
+                <li data-tag="Список покупок">Список покупок</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="search__box">
+                <input type="text" id="searchInput" placeholder="Поиск">
+                <button id="searchBtn">🔍</button>
             </div>
         </div>
-    </div>
+  </div>
 </body>
 </html>

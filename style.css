@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
 }
+/* Общий стиль */
 body {
     background: #F0F0F0;
     display: flex;
@@ -14,6 +15,7 @@ body {
     font-family: "Inter", sans-serif;
     font-size:  20px;
 }
+/* Обёртка */
 .wrapper {
     border: 1px solid #d8d9da;
     border-radius: 30px;
@@ -22,15 +24,76 @@ body {
     height: 932px;
     background-color: white;
     grid-template-columns: 1fr 2fr;
-
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+/* Левая часть меню */
 .menu {
     background-color: #FCFBFC;
     border-right: 1px solid #F0F0F0;
     border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
 }
-.left {
+h1 {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    align-items: center;
+}
+.menu button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  align-items: center;
+  font-size: x-large;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #4499FF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2788ff;
+}
+h2 {
+    color: #74777B;
+    margin-top: 30px;
+    margin-left: 3px;
+}
+ul {
+    margin-left: 40px;
+    overflow: hidden;
+}
+.menu ul li {
+    margin: 20px 0;
+    cursor: pointer;
+}
+.main {
+    flex: 1;
+    padding: 20px;
+}
+.search__box {
+    display: flex;
+    margin-bottom: 20px;
+}
+.searchh__box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.search__box button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background: #3498db;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
