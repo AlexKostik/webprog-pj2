@@ -82,11 +82,12 @@ ul {
     display: flex;
     margin-bottom: 20px;
 }
-.searchh__box input {
+.search__box input {
     flex: 1;
     padding: 10px;
+    margin-right: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px;
     outline: none;
 }
 .search__box button {
@@ -94,6 +95,10 @@ ul {
     border: 1px solid #ddd;
     background: #3498db;
     color: white;
-    border-radius: 0 5px 5px 0;
+    border-radius: 10px;
     cursor: pointer;
+}
+.search__box img {
+    width: 20px;
+    height: auto;
 }
